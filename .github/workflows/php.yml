@@ -28,7 +28,7 @@ jobs:
       port: 22
       scripts: |
          cd /autodeploy/test-lagi
-         git pull origin master
+         git pull origin main
          git status
          ls -lah
     
