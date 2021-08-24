@@ -1,5 +1,5 @@
 <?php
-echo "<b>ini adalah testing</b>";
+echo "<b>ini adalah testing</b><br>";
  echo "passbadn";
  echo phpinfo();
  echo "wajah";
