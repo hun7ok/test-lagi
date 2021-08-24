@@ -13,7 +13,21 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-  
+  deploy:
+   needs: [tests]
+   runs-on: ubuntu-latest
+   
+   steps:
+   - name: 'SSH TEST DEPLOY'
+     uses: appleboy/ssh-action@master
+     with:
+      host: ${{ secrets.HOST }}
+      username: ${{ secrets.USERNAME }}
+      key: ${{ secrets.PRIVATE_KEY }}
+      port: 22
+      scripts: |
+         cd /autodeploy
+         ls -lah
     
   
 
