@@ -26,7 +26,7 @@ jobs:
       password : ${{ secrets.PASSWORD }}
       port: 22
       scripts: |
-         cd /autodeploy
+         cd /autodeploy/test-lagi
          git pull origin master
          git status
          ls -lah
