@@ -27,7 +27,7 @@ jobs:
       password : ${{ secrets.PASSWORD }}
       port: 22
       scripts: |
-         cd /autodeploy/test-lagi
+         cd /home/kominfotala/autodeploy/test-lagi
          git pull origin main
          git status
          ls -lah
